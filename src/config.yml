@@ -1,0 +1,207 @@
+messages:
+  prefix: "&7[&4Super StaffTools&7]&4: "
+  staffchat-prefix: "&7[&cSC&7]&c: %sender%:&6 "
+  noperms: "&4You don't have enough permission to perform this command !"
+  wrongargs: "&cWrong Args ! Please refer to /help for more informations"
+  playeronly: "&4This command can only be performed by a player"
+  playeroffline: "&cCannot find %player% !"
+  
+  fly-mode-on: "&6Fly Mode &aON"
+  fly-mode-off: "&6Fly Mode &cOFF"
+  
+  god-mode-on: "&6God Mode &aON"
+  god-mode-off: "&6God Mode &cOFF"
+  
+  vanish-mode-on: "&6Vanish Mode &aON"
+  vanish-mode-off: "&6Vanish Mode &cOFF"
+  
+  staffMode-on: "&6Staff Mode &aON"
+  staffMode-off: "&6Staff Mode &cOFF"
+  
+  heal-message: "&6You have been healed"
+  feed-message: "&6You haven been fed"
+  
+  clearChat-message-sender: "&6You have cleared chat"
+  clearChat-message-players: "&6Chat has been cleared !"
+  
+  muteChat-message-sender-enabled: "&6You have muted chat"
+  muteChat-message-players-enabled: "&c&lChat has been muted by a staff member !"
+  muteChat-message-sender-disabled: "&6You have unmuted chat"
+  muteChat-message-players-disabled: "&c&lChat has been unmuted by a staff member !"
+  muteChat-message-chatAction: "&4Chat is muted ! You are not allowed to talk until its unlocked"
+  
+  gamemode-message-survival: "&6Gamemode Set to Survival"
+  gamemode-message-creative: "&6Gamemode Set to Creative"
+  gamemode-message-adventure: "&6Gamemode Set to Adventure"
+  gamemode-message-spectator: "&6Gamemode Set to Spectator"
+  
+  difficulty-message-peacefull: "&6Difficulty set to Peacefull"
+  difficulty-message-easy: "&6Difficulty set to Easy"
+  difficulty-message-normal: "&6Difficulty set to Normal"
+  difficulty-message-hard: "&6Difficulty set to Hard"
+  
+  weather-rain: "&6Weather set to Storm"
+  weather-dry: "&6Weather set to Dry"
+  
+  timechange-message: "&6Time set to &6%time%"
+  
+  whitelist-on: "&6Whitelist turned ON"
+  whitelist-off: "&6Whitelist turned OFF"
+  
+  effect-message-clearEffects: "&6Cleared all Effects"
+  effect-message-applyEffect: "&6Applied %potion% %level% !" 
+  
+  spawn-mob-message: "&6Succesfully spawned a &9%mob%"
+  
+  no-random-teleport: "&cCannot random teleport at this moment !"
+
+  staff-unfreeze-player: "&6You have &aSuccessfully &6unfrozen %player% !"
+  staff-freeze-player: "&6You have &aSuccessfully &6frozen %player%!"
+  player-freeze: "&c&LYou have been frozen by a staff member, please await orders from a staff member. Do not log out or tp to another location !."
+  player-unfreeze: "&aYou have been unfrozen by a staff member !"
+
+  staffmode-prevent-build: "&cYou are not allowed to place blocks while in staffmode !"
+  staffmode-prevent-break: "&cYou are not allowed to break blocks while in staffmode !"
+  staffmode-prevent-drop: "&cYou are not allowed to drop items while in staffmode !"
+  staffmode-prevent-pickup: "&cYou are not allowed to pickup items while in staffmode !"
+  
+inventory:
+  no-permission-lore: "&cNo Permission"
+  staffMode:
+    compassItem: 
+      name: "&6Lunch to Location Item"
+      lore: "&8Right-Click this item to lunch to the location your looking at"
+    randomTeleport:
+      name: "&6Random Teleport Item"
+      lore: "&8Right-Click this item to teleport to a random player"
+    freezeItem:
+      name: "&6Freeze Item"
+      lore: "&8Right-Click a player with this item to freeze/unfreeze the player"
+    inventoryItem:
+      name: "&6Inventory Check Item"
+      lore: "&8Right-Click a player with this item to open his inventory"
+    enderChestItem:
+      name: "&6Enderchest Check Item"
+      lore: "&8Right-Click a player with this item to open his enderchest"
+    informationsItem:
+      name: "&6Informations Item"
+      lore: "&8Right-Click a player with this item to get informations about his player"
+    cpsItem:
+      name: "&6Cps Tester Item"
+      lore: "&8Right-Click a player with this item to check his Clicks per second"
+    disableItem:
+      name: "&cDisable StaffMode"
+  spawn:
+    name: "&6Spawn Mobs: "
+  levels:
+    name: "&6Set %potion%'s level: " 
+  effect:
+    name: "&6Apply Status Effects"
+    speedItem:
+      name: "&6Speed Effect"
+    strenghtItem:
+      name: "&6Strength Effect"
+    jumpBoostItem:
+      name: "&6Jump Boost Effect"
+    fireResistanceItem:
+      name: "&6Fire Resistance Effect"
+    resistanceItem:
+      name: "&6Resistance Effect"
+    regenerationItem:
+      name: "&6Regeneration Effect"
+    hasteItem:
+      name: "&6Haste Effect"
+    waterBreathingItem:
+      name: "&6Water Breathing Effect"
+    invisibilityItem:
+      name: "&6Invisibility Effect"
+    glowingItem:
+      name: "&6Glowing Effect"
+    levitationItem:
+      name: "&6Levitation Effect"
+    absorbtionItem:
+      name: "&6Absorbtion Effect"
+    nightVisionItem:
+      name: "&6Night Vision Effect"
+    healItem:
+      name: "&6Instant Heal Effect"
+    clearEffectsItem:
+      name: "&6Clear Effects"
+  time:
+    name: "&6Change server's time"
+    timeItem:
+      name: "&6Set time to %time%"
+  weather:
+    name: "&6Change Server's weather"
+    rainItem:
+      name: "&6Change to storm"
+    dryItem:
+      name: "&6Change to dry"
+  difficulty:
+    name: "&6Difficulty Changer GUI"
+    peacefullItem:
+      name: "&6Peacefull"
+    easyItem:
+      name: "&6Easy"
+    normalItem:
+      name: "&6Normal"
+    hardItem:
+      name: "&6Hard"
+  gamemode:
+    name: "&6Gamemode Changer GUI"
+    survivalItem:
+      name: "&6Set Gamemode to Survival"
+    creativeItem:
+      name: "&6Set Gamemode to Creative"
+    adventureItem:
+      name: "&6Set Gamemode to Adventure"
+    spectatorItem:
+      name: "&6Set Gamemode to Spectator"
+  main:
+    name: "&cStaff GUI:"
+    flyItem:
+      name: "&6Fly Mode"
+      lore-enabled: "&aEnabled"
+      lore-disabled: "&4Disabled"
+    godItem:
+      name: "&6God Mode"
+      lore-enabled: "&aEnabled"
+      lore-disabled: "&4Disabled"
+    vanishItem:
+      name: "&6Vanish Mode"
+      lore-enabled: "&aEnabled"
+      lore-disabled: "&4Disabled"
+    staffModeItem:
+      name: "&6Staff Mode"
+      lore-enabled: "&aEnabled"
+      lore-disabled: "&4Disabled"
+    healItem:
+      name: "&6Heal Yourself"
+    feedItem:
+      name: "&6Feed Yourself"
+    clearChatItem:
+      name: "&6Clear Chat"
+    muteChatItem:
+      name: "&6Mute Chat"
+    gamemodeItem:
+      name: "&6Change Gamemode"
+    difficultyItem:
+      name: "&6Change Server's difficulty"
+    weatherItem:
+      name: "&6Change Server's weather"
+    timeItem:
+      name: "&6Change Server's time"
+    whitelistItem:
+      name: "&6Toggle server whitelist"
+      lore-enabled: "&6Whitelist &aON"
+      lore-disabled: "&6Whitelist &cOFF"      
+    effectItem:
+      name: "&6Apply status effects"
+    spawnItem:
+      name: "&6Spawn Mobs"
+    backItem:
+      name: "&6Go Back"
+    closeInvItem:
+      name: "&6Close Inventory"
+settings:
+  cps-test-time: 5

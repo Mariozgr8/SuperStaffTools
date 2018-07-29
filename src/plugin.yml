@@ -1,0 +1,90 @@
+name: SuperStaffTools
+main: me.mariozgr8.superstafftools.SuperStaffTools
+version: 2.2
+
+commands:
+  sstafftools:
+    aliases: [sst, st, sg]
+    usage: /sstafftools
+    description: Allow the Main Inventory
+  staffchat:
+    aliases: [sc]
+    usage: /sc (message)
+    description: Send a message to staff chat
+permissions:
+  staffgui.*:
+    description: Give access to all the plugin features
+    children:
+      staffgui.open: true
+      staffgui.fly: true
+      staffgui.god: true
+      staffgui.vanish: true
+      staffgui.staffmode: true
+      staffgui.heal: true
+      staffgui.feed: true
+      staffgui.clearchat: true
+      staffgui.mutechat: true
+      staffgui.gamemode: true
+      staffgui.difficulty: true 
+      staffgui.time: true
+      staffgui.weather: true
+      staffgui.whitelist: true
+      staffgui.effects: true
+      staffgui.staffchat: true
+      staffgui.mutechat.bypass: true
+      staffgui.spawn: true
+  staffgui.open:
+    description: Allow the player to use /staffgui
+    default: OP
+  staffgui.fly:
+    decription: Allow the user to Toggle fly mode on/off
+    default: OP
+  staffgui.god:
+    decription: Allow the user to Toggle god mode on/off
+    default: OP
+  staffgui.vanish:
+    decription: Allow the user to Toggle vanish mode on/off
+    default: OP
+  staffgui.staffmode:
+    decription: Allow the user to Toggle staffmode mode on/off
+    default: OP
+  staffgui.heal:
+    decription: Allow the user to heal himself
+    default: OP
+  staffgui.feed:
+    decription: Allow the user to feed himself
+    default: OP
+  staffgui.clearchat:
+    decription: Allow the user to clear the chat
+    default: OP
+  staffgui.mutechat:
+    decription: Allow the user to mute the chat
+    default: OP
+  staffgui.gamemode:
+    decription: Allow the user to change their gamemode
+    default: OP
+  staffgui.difficulty:
+    decription: Allow the user to change the server's difficulty
+    default: OP
+  staffgui.weather:
+    description: Allow the user to change the server's weather
+    default: OP
+  staffgui.time:
+    description: Allow the user to change the server's time
+    default: OP
+  staffgui.whitelist:
+    default: OP
+    description: Allow the user to manage the server's whitelist
+  staffgui.effects:
+    default: OP
+    description: Allow the user to use apply effcts to themselfs
+  staffgui.staffchat:
+    default: OP
+    description: Allow the user to use the /sc command and receive messages from other staff
+  staffgui.mutechat.bypass:
+    default: OP
+    description: Allow player with this permission to chat even if the chat is locked
+  staffgui.spawn:
+    default: OP
+    description: Allow player to use the spawn mobs features
+   
