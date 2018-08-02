@@ -1,6 +1,6 @@
 name: SuperStaffTools
 main: me.mariozgr8.superstafftools.SuperStaffTools
-version: 2.2
+version: 2.2.1
 
 commands:
   sstafftools:

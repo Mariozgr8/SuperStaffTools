@@ -14,7 +14,7 @@ import me.mariozgr8.superstafftools.Listeners.StaffModeEvents;
 import me.mariozgr8.superstafftools.Listeners.VanishEvents;
 
 public class SuperStaffTools extends JavaPlugin{
-	private String version = "2.2";
+	private String version = "2.2.1";
 	
 	private MessageManager messages;
 	private PermissionList perms;
