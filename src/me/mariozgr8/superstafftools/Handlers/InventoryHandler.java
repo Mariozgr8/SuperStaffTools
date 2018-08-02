@@ -200,7 +200,7 @@ public class InventoryHandler {
 	}
 	public Inventory spawnInv()
 	{
-		Inventory spawnInv = Bukkit.createInventory(null, 9*3, this.chat.getSpawnInvName());
+		Inventory spawnInv = Bukkit.createInventory(null, 9*4, this.chat.getSpawnInvName());
 		spawnInv.setItem(0, this.mobSpawnItem("Zombie"));
 		spawnInv.setItem(1, this.mobSpawnItem("Creeper"));
 		spawnInv.setItem(2, this.mobSpawnItem("Spider"));
@@ -224,7 +224,12 @@ public class InventoryHandler {
 		spawnInv.setItem(20, this.mobSpawnItem("Rabbit"));
 		spawnInv.setItem(21, this.mobSpawnItem("Horse"));
 		spawnInv.setItem(22, this.mobSpawnItem("Mushroom"));
-		spawnInv.setItem(26, this.backItem());
+		spawnInv.setItem(23, this.mobSpawnItem("Iron Golem"));
+		spawnInv.setItem(24, this.mobSpawnItem("Snow Golem"));
+		spawnInv.setItem(25, this.mobSpawnItem("Guardian"));
+		spawnInv.setItem(26, this.mobSpawnItem("Giant Zombie"));
+		spawnInv.setItem(27, this.mobSpawnItem("Wither"));
+		spawnInv.setItem(35, this.backItem());
 		return spawnInv;
 		
 		//Need to add Guardian, Elder Guardian, Giant Zombie, Wither, Ender Dragon, Iron Golem, Snow Golem, Wither Skeleton
@@ -343,7 +348,7 @@ public class InventoryHandler {
 		imeta.setDisplayName(this.chat.setColorForMessage(this.chat.getMuteChatItemName()));
 		
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add(utils.permissionLore(p, this.perms.getMuteChatItem()));
+		lore.add(utils.permissionLore(p,  this.perms.getMuteChatItem()));
 		
 		imeta.setLore(lore);
 		i.setItemMeta(imeta);

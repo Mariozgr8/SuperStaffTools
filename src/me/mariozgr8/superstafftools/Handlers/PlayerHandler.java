@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -24,7 +25,7 @@ public class PlayerHandler {
 	
 	public static PlayerHandler getSingleton() {
 		return handler;
-	}
+	} 
 	
 	private SuperStaffTools ss = SuperStaffTools.getMainInstance();
 	private MessageManager chat = ss.getMessages();
@@ -667,99 +668,189 @@ public class PlayerHandler {
 			return "Absorbtion";
 		}
 	}
-	public EntityType getEntityFromItemName(ItemStack i)
-	{
-		String name = i.getItemMeta().getDisplayName();
-		if(name.contains("Zombie Pigman"))
-		{
-			return EntityType.PIG_ZOMBIE;
-		}
-		if(name.contains("Cave Spider"))
-		{
-			return EntityType.CAVE_SPIDER;
-		}
-		if(name.contains("Zombie"))
-		{
+	public EntityType getEntityFromItemName(ItemStack i) {
+		String name = ChatColor.stripColor(i.getItemMeta().getDisplayName().replace("Spawn ", ""));
+		if(name.equals("Zombie")) {
 			return EntityType.ZOMBIE;
 		}
-		if(name.contains("Creeper"))
-		{
+		else if(name.equals("Creeper")) {
 			return EntityType.CREEPER;
 		}
-		if(name.contains("Spider"))
-		{
+		else if(name.equals("Spider")) {
 			return EntityType.SPIDER;
 		}
-		if(name.contains("Skeleton"))
-		{
+		else if(name.equals("Skeleton")) {
 			return EntityType.SKELETON;
 		}
-		if(name.contains("Slime"))
-		{
+		else if(name.equals("Slime")) {
 			return EntityType.SLIME;
 		}
-		if(name.contains("Ghast"))
-		{
+		else if(name.equals("Ghast")) {
 			return EntityType.GHAST;
 		}
-		if(name.contains("Blaze"))
-		{
+		else if(name.equals("Zombie Pigman")) {
+			return EntityType.PIG_ZOMBIE;
+		}
+		else if(name.equals("Cave Spider")) {
+			return EntityType.CAVE_SPIDER;
+		}
+		else if(name.equals("Blaze")) {
 			return EntityType.BLAZE;
 		}
-		if(name.contains("Silverfish"))
-		{
+		else if(name.equals("Silverfish")) {
 			return EntityType.SILVERFISH;
 		}
-		if(name.contains("Enderman"))
-		{
+		else if(name.equals("Enderman")) {
 			return EntityType.ENDERMAN;
 		}
-		if(name.contains("Witch"))
-		{
+		else if(name.equals("Witch")) {
 			return EntityType.WITCH;
 		}
-		if(name.contains("Bat"))
-		{
+		else if(name.equals("Bat")) {
 			return EntityType.BAT;
 		}
-		if(name.contains("Magma Cube"))
-		{
+		else if(name.equals("Magma Cube")) {
 			return EntityType.MAGMA_CUBE;
 		}
-		if(name.contains("Cow"))
-		{
+		else if(name.equals("Cow")) {
 			return EntityType.COW;
 		}
-		if(name.contains("Pig"))
-		{
+		else if(name.equals("Pig")) {
 			return EntityType.PIG;
 		}
-		if(name.contains("Sheep"))
-		{
+		else if(name.equals("Sheep")) {
 			return EntityType.SHEEP;
 		}
-		if(name.contains("Chicken"))
-		{
+		else if(name.equals("Chicken")) {
 			return EntityType.CHICKEN;
 		}
-		if(name.contains("Wolf"))
-		{
+		else if(name.equals("Wolf")) {
 			return EntityType.WOLF;
 		}
-		if(name.contains("Ocelot"))
-		{
+		else if(name.equals("Ocelot")) {
 			return EntityType.OCELOT;
 		}
-		if(name.contains("Rabbit"))
-		{
+		else if(name.equals("Rabbit")) {
 			return EntityType.RABBIT;
 		}
-		if(name.contains("Horse"))
-		{
+		else if(name.equals("Horse")) {
 			return EntityType.HORSE;
 		}
-		else {
+		else if(name.equals("Mushroom")) {
 			return EntityType.MUSHROOM_COW;
 		}
+		else if(name.equals("Iron Golem")) {
+			return EntityType.IRON_GOLEM;
+		}
+		else if(name.equals("Snow Golem")) {
+			return EntityType.SNOWMAN;
+		}
+		else if(name.equals("Guardian")) {
+			return EntityType.GUARDIAN;
+		}
+		else if(name.equals("Giant Zombie")) {
+			return EntityType.GIANT;
+		}
+		else if(name.equals("Wither")) {
+			return EntityType.WITHER;
+		}
+		else {
+			return null;
+		}
 	}
+//	public EntityType getEntityFromItemName(ItemStack i)
+//	{
+//		String name = i.getItemMeta().getDisplayName();
+//		if(name.contains("Zombie Pigman"))
+//		{
+//			return EntityType.PIG_ZOMBIE;
+//		}
+//		if(name.contains("Cave Spider"))
+//		{
+//			return EntityType.CAVE_SPIDER;
+//		}
+//		if(name.contains("Zombie"))
+//		{
+//			return EntityType.ZOMBIE;
+//		}
+//		if(name.contains("Creeper"))
+//		{
+//			return EntityType.CREEPER;
+//		}
+//		if(name.contains("Spider"))
+//		{
+//			return EntityType.SPIDER;
+//		}
+//		if(name.contains("Skeleton"))
+//		{
+//			return EntityType.SKELETON;
+//		}
+//		if(name.contains("Slime"))
+//		{
+//			return EntityType.SLIME;
+//		}
+//		if(name.contains("Ghast"))
+//		{
+//			return EntityType.GHAST;
+//		}
+//		if(name.contains("Blaze"))
+//		{
+//			return EntityType.BLAZE;
+//		}
+//		if(name.contains("Silverfish"))
+//		{
+//			return EntityType.SILVERFISH;
+//		}
+//		if(name.contains("Enderman"))
+//		{
+//			return EntityType.ENDERMAN;
+//		}
+//		if(name.contains("Witch"))
+//		{
+//			return EntityType.WITCH;
+//		}
+//		if(name.contains("Bat"))
+//		{
+//			return EntityType.BAT;
+//		}
+//		if(name.contains("Magma Cube"))
+//		{
+//			return EntityType.MAGMA_CUBE;
+//		}
+//		if(name.contains("Cow"))
+//		{
+//			return EntityType.COW;
+//		}
+//		if(name.contains("Pig"))
+//		{
+//			return EntityType.PIG;
+//		}
+//		if(name.contains("Sheep"))
+//		{
+//			return EntityType.SHEEP;
+//		}
+//		if(name.contains("Chicken"))
+//		{
+//			return EntityType.CHICKEN;
+//		}
+//		if(name.contains("Wolf"))
+//		{
+//			return EntityType.WOLF;
+//		}
+//		if(name.contains("Ocelot"))
+//		{
+//			return EntityType.OCELOT;
+//		}
+//		if(name.contains("Rabbit"))
+//		{
+//			return EntityType.RABBIT;
+//		}
+//		if(name.contains("Horse"))
+//		{
+//			return EntityType.HORSE;
+//		}
+//		else {
+//			return EntityType.MUSHROOM_COW;
+//		}
+//	}
 }
